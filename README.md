@@ -27,7 +27,7 @@ the project further:
 
 ```shell
 git clone https://github.com/mishrakeshav/Path-Finding-Algorithm-Visualizer.git
-cd your-project/
+cd Path-Finding-Algorithm-Visualizer/
 pip install -r requirements.txt
 ```
 
