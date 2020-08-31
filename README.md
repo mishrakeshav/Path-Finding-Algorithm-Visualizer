@@ -1,7 +1,7 @@
 
 
 # Path Finding Algorithm Visualizers &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
-> Additional information or tag line
+> A picture is worth a thousand words
 
 This is a fun project to learn algorithms and also visualize it for better understanding. Also to showcase my algorithmic skills.  
 
