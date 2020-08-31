@@ -7,7 +7,7 @@ This is a fun project to learn algorithms and also visualize it for better under
 
 ## Installing / Getting started
 
-First install all the requirements using the requirements
+First install all the requirements using the requirements and then run the files of the respective algorithm you want to visualize
 
 ```shell
 pip install -r requirements.txt
