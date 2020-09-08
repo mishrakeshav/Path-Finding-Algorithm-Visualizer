@@ -30,7 +30,14 @@ class DFS:
                 if neighbor not in visited:
                     visited.add(neighbor)
                     neighbor.parent = current_node
+                    if neighbor == end:
+                        DFS.draw_path(end, start, draw)
+                        end.make_end()
+                        start.make_start()
+                        return True 
+                    neighbor.make_open()
                     nodes.appendleft(neighbor)
+                    draw()
             if current_node != start:
                 current_node.make_closed()
                 draw()

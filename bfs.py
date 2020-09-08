@@ -10,7 +10,7 @@ class BFS:
             draw()
             node = node.parent
     @staticmethod
-    def dfs(draw, grid, start, end):
+    def bfs(draw, grid, start, end):
         nodes = deque()
         nodes.appendleft(start)
         visited = set()
@@ -30,7 +30,9 @@ class BFS:
                 if neighbor not in visited:
                     visited.add(neighbor)
                     neighbor.parent = current_node
+                    neighbor.make_open()
                     nodes.append(neighbor)
+                    draw()
             if current_node != start:
                 current_node.make_closed()
                 draw()

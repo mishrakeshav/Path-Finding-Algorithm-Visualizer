@@ -19,8 +19,6 @@ GREY = (128, 128, 128)
 TURQUOISE = (64, 224, 208)
 
 
-
-
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption('A* Path Finding algorithm')
 
@@ -181,16 +179,18 @@ def main(win, width):
                     
             
             if event.type == pygame.KEYDOWN:
-                
-                if event.key == pygame.K_SPACE and start and end:
+                if start and end:
                     started = True
                     for row in grid:
                         for spot in row:
                             spot.update_neighbors(grid)
-                    # BFS.dfs(lambda :draw(win, grid, ROWS, width), grid, start, end)
-                    ASTAR.astar(lambda :draw(win, grid, ROWS, width), grid, start, end)
+                    if event.key == pygame.K_a:
+                        DFS.dfs(lambda :draw(win, grid, ROWS, width), grid, start, end)
+                    elif event.key == pygame.K_s:
+                        BFS.bfs(lambda :draw(win, grid, ROWS, width), grid, start, end)
+                    elif event.key == pygame.K_d:
+                        ASTAR.astar(lambda :draw(win, grid, ROWS, width), grid, start, end)
                     started = False 
-                
                 if event.key == pygame.K_c:
                     start = None 
                     end = None 

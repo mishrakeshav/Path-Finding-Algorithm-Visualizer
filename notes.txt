@@ -1,0 +1,9 @@
+Algortihms to visualize :
+Dijiktras 
+A* Star 
+Greedy Best First Search 
+Swarm Algortihm
+Convergent Swarm Algortihm
+Bidirectional swarm Algortihm
+Breadth First Search 
+Depth First Search
