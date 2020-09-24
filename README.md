@@ -14,7 +14,11 @@ pip install -r requirements.txt
 ```
 Visualize any algorithm by running the respective files(astar.py). A GUI window will showup.
 
-## Developing
+## Screenshots 
+<img src = './screenshots/pv1.png' width='400'>
+<img src = './screenshots/pv2.png' width='400'>
+<img src = './screenshots/pv3.png' width='400'>
+<img src = './screenshots/pv4.png' width='400'>
 
 ### Built With
 Python, Flask, Pygame

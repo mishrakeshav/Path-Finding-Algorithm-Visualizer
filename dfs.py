@@ -9,6 +9,7 @@ class DFS:
             node.make_path()
             draw()
             node = node.parent
+            
     @staticmethod
     def dfs(draw, grid, start, end):
         nodes = deque()
@@ -42,6 +43,3 @@ class DFS:
                 current_node.make_closed()
                 draw()
         return False 
-            
-
-

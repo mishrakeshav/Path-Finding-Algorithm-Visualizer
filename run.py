@@ -20,7 +20,7 @@ TURQUOISE = (64, 224, 208)
 
 
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption('A* Path Finding algorithm')
+pygame.display.set_caption('Path Finding algorithm Visualizer')
 
 
 class Spot:
@@ -185,10 +185,13 @@ def main(win, width):
                         for spot in row:
                             spot.update_neighbors(grid)
                     if event.key == pygame.K_a:
+                        pygame.display.set_caption('DFS Path Finding algorithm')
                         DFS.dfs(lambda :draw(win, grid, ROWS, width), grid, start, end)
                     elif event.key == pygame.K_s:
+                        pygame.display.set_caption('BFS Path Finding algorithm')
                         BFS.bfs(lambda :draw(win, grid, ROWS, width), grid, start, end)
                     elif event.key == pygame.K_d:
+                        pygame.display.set_caption('A* Path Finding algorithm')
                         ASTAR.astar(lambda :draw(win, grid, ROWS, width), grid, start, end)
                     started = False 
                 if event.key == pygame.K_c:

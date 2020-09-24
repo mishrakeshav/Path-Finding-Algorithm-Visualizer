@@ -9,6 +9,7 @@ class BFS:
             node.make_path()
             draw()
             node = node.parent
+
     @staticmethod
     def bfs(draw, grid, start, end):
         nodes = deque()
