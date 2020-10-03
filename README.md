@@ -3,7 +3,7 @@
 # Path Finding Algorithm Visualizers &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/mishrakeshav/Path-Finding-Algorithm-Visualizer/blob/master/LICENSE)
 > A picture is speaks a thousand words
 
-This is a fun project to learn algorithms and also visualize it for better understanding. Also to showcase my algorithmic skills.  
+This is a fun project to learn algorithms and also visualize it for better understanding.  
 
 ## Installing / Getting started
 
@@ -12,7 +12,15 @@ First install all the requirements using the requirements and then run the files
 ```shell
 pip install -r requirements.txt
 ```
-Visualize any algorithm by running the respective files(astar.py). A GUI window will showup.
+<ul>
+  <li>Run the run.py file</li>
+  <li>Press A to run the DFS Algorithm.</li>
+  <li>Press S to run the DFS Algorithm.</li>
+  <li>Press D to run the A* Algorithm.</li>
+  <li>Press C to clear the screen.</li>
+</ul>
+ 
+
 
 ## Screenshots 
 <img src = './screenshots/pv1.png' width='400'><img src = './screenshots/pv2.png' width='400'>
@@ -20,7 +28,7 @@ Visualize any algorithm by running the respective files(astar.py). A GUI window 
 
 
 ### Built With
-Python, Flask, Pygame
+Python, Pygame
 
 
 ### Setting up Dev
